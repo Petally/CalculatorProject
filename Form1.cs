@@ -76,7 +76,7 @@ namespace CalculatorProject
         void selectOperation(string selectedOperation)
         {
             // Set up input numbers
-            if (beganInputtingNumber == true)
+            if (beganInputtingNumber == true || CalculatorOutput.Text == "0")
             {
                 beganInputtingNumber = false;
                 if (firstNumber == null)
@@ -222,6 +222,11 @@ namespace CalculatorProject
             {
                 addNumberToInput("0");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

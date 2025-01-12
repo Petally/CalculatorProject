@@ -55,11 +55,11 @@
             this.CalculatorOutput.AutoSize = true;
             this.CalculatorOutput.BackColor = System.Drawing.Color.White;
             this.CalculatorOutput.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CalculatorOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.CalculatorOutput.Font = new System.Drawing.Font("Courier New", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.CalculatorOutput.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CalculatorOutput.Location = new System.Drawing.Point(205, 0);
+            this.CalculatorOutput.Location = new System.Drawing.Point(437, 0);
             this.CalculatorOutput.Name = "CalculatorOutput";
-            this.CalculatorOutput.Size = new System.Drawing.Size(35, 37);
+            this.CalculatorOutput.Size = new System.Drawing.Size(34, 36);
             this.CalculatorOutput.TabIndex = 0;
             this.CalculatorOutput.Text = "0";
             this.CalculatorOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -71,7 +71,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(437, 37);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -232,7 +232,7 @@
             // EqualsButton
             // 
             this.EqualsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.EqualsButton.Location = new System.Drawing.Point(174, 259);
+            this.EqualsButton.Location = new System.Drawing.Point(228, 205);
             this.EqualsButton.Name = "EqualsButton";
             this.EqualsButton.Size = new System.Drawing.Size(48, 48);
             this.EqualsButton.TabIndex = 2;
@@ -266,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(240, 314);
+            this.ClientSize = new System.Drawing.Size(471, 259);
             this.Controls.Add(this.DotButton);
             this.Controls.Add(this.DivideButton);
             this.Controls.Add(this.MultiplyButton);
@@ -291,6 +291,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
